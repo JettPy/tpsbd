@@ -1,0 +1,422 @@
+[
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 0,
+    "body": {
+      "customer_id": 11,
+      "personal_data": "Игнатова Ксения Александровна",
+      "purchase_date": "2023-08-07",
+      "product_id": 18,
+      "product_name": "Клубника",
+      "amount": 21,
+      "price": 5880
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 1,
+    "body": {
+      "customer_id": 20,
+      "personal_data": "Антонов Александр Львович",
+      "purchase_date": "2023-09-29",
+      "product_id": 11,
+      "product_name": "Арбуз",
+      "amount": 8,
+      "price": 1200
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 2,
+    "body": {
+      "customer_id": 3,
+      "personal_data": "Александров Матвей Александрович",
+      "purchase_date": "2023-11-17",
+      "product_id": 4,
+      "product_name": "Свекла",
+      "amount": 3,
+      "price": 105
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 3,
+    "body": {
+      "customer_id": 15,
+      "personal_data": "Смирнов Степан Владимирович",
+      "purchase_date": "2023-08-06",
+      "product_id": 0,
+      "product_name": "Банан",
+      "amount": 15,
+      "price": 1875
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 4,
+    "body": {
+      "customer_id": 7,
+      "personal_data": "Кузнецов Даниил Александрович",
+      "purchase_date": "2023-09-27",
+      "product_id": 18,
+      "product_name": "Клубника",
+      "amount": 34,
+      "price": 9520
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 5,
+    "body": {
+      "customer_id": 14,
+      "personal_data": "Федотова Вера Михайловна",
+      "purchase_date": "2023-12-21",
+      "product_id": 7,
+      "product_name": "Тыква",
+      "amount": 4,
+      "price": 480
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 6,
+    "body": {
+      "customer_id": 9,
+      "personal_data": "Фирсов Артём Степанович",
+      "purchase_date": "2023-12-22",
+      "product_id": 19,
+      "product_name": "Апельсин",
+      "amount": 41,
+      "price": 2870
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 7,
+    "body": {
+      "customer_id": 18,
+      "personal_data": "Титов Пётр Ярославович",
+      "purchase_date": "2023-09-06",
+      "product_id": 21,
+      "product_name": "Ежевика",
+      "amount": 32,
+      "price": 11200
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 8,
+    "body": {
+      "customer_id": 24,
+      "personal_data": "Кузнецова Василиса Матвеевна",
+      "purchase_date": "2023-07-02",
+      "product_id": 5,
+      "product_name": "Капуста",
+      "amount": 5,
+      "price": 300
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 9,
+    "body": {
+      "customer_id": 2,
+      "personal_data": "Иванов Роберт Кириллович",
+      "purchase_date": "2023-10-22",
+      "product_id": 14,
+      "product_name": "Лук",
+      "amount": 14,
+      "price": 1050
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 10,
+    "body": {
+      "customer_id": 7,
+      "personal_data": "Кузнецов Даниил Александрович",
+      "purchase_date": "2023-12-06",
+      "product_id": 1,
+      "product_name": "Яблоко",
+      "amount": 8,
+      "price": 1040
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 11,
+    "body": {
+      "customer_id": 19,
+      "personal_data": "Малышева Ярослава Александровна",
+      "purchase_date": "2023-07-13",
+      "product_id": 6,
+      "product_name": "Редис",
+      "amount": 8,
+      "price": 800
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 12,
+    "body": {
+      "customer_id": 5,
+      "personal_data": "Суханов Тимур Владимирович",
+      "purchase_date": "2023-08-01",
+      "product_id": 18,
+      "product_name": "Клубника",
+      "amount": 10,
+      "price": 2800
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 13,
+    "body": {
+      "customer_id": 15,
+      "personal_data": "Смирнов Степан Владимирович",
+      "purchase_date": "2023-10-14",
+      "product_id": 13,
+      "product_name": "Ананас",
+      "amount": 6,
+      "price": 1380
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 14,
+    "body": {
+      "customer_id": 17,
+      "personal_data": "Дьяков Александр Макарович",
+      "purchase_date": "2023-07-16",
+      "product_id": 24,
+      "product_name": "Огурец",
+      "amount": 12,
+      "price": 840
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 15,
+    "body": {
+      "customer_id": 18,
+      "personal_data": "Титов Пётр Ярославович",
+      "purchase_date": "2023-12-27",
+      "product_id": 16,
+      "product_name": "Картошка",
+      "amount": 11,
+      "price": 385
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 16,
+    "body": {
+      "customer_id": 12,
+      "personal_data": "Федорова Ева Максимовна",
+      "purchase_date": "2023-07-27",
+      "product_id": 21,
+      "product_name": "Ежевика",
+      "amount": 10,
+      "price": 3500
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 17,
+    "body": {
+      "customer_id": 11,
+      "personal_data": "Игнатова Ксения Александровна",
+      "purchase_date": "2023-12-06",
+      "product_id": 2,
+      "product_name": "Помидор",
+      "amount": 10,
+      "price": 2600
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 18,
+    "body": {
+      "customer_id": 10,
+      "personal_data": "Кочеткова Анна Львовна",
+      "purchase_date": "2023-07-25",
+      "product_id": 20,
+      "product_name": "Черника",
+      "amount": 8,
+      "price": 2800
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 19,
+    "body": {
+      "customer_id": 16,
+      "personal_data": "Гришина Лея Кирилловна",
+      "purchase_date": "2023-12-10",
+      "product_id": 8,
+      "product_name": "Киви",
+      "amount": 10,
+      "price": 1500
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 20,
+    "body": {
+      "customer_id": 22,
+      "personal_data": "Волкова Арина Владимировна",
+      "purchase_date": "2023-07-22",
+      "product_id": 24,
+      "product_name": "Огурец",
+      "amount": 10,
+      "price": 700
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 21,
+    "body": {
+      "customer_id": 21,
+      "personal_data": "Гуляева Ксения Ивановна",
+      "purchase_date": "2023-09-12",
+      "product_id": 22,
+      "product_name": "Малина",
+      "amount": 10,
+      "price": 3500
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 22,
+    "body": {
+      "customer_id": 1,
+      "personal_data": "Миронов Степан Захарович",
+      "purchase_date": "2023-12-17",
+      "product_id": 9,
+      "product_name": "Баклажан",
+      "amount": 7,
+      "price": 1960
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 23,
+    "body": {
+      "customer_id": 0,
+      "personal_data": "Васильев Иван Дмитриевич",
+      "purchase_date": "2023-07-06",
+      "product_id": 15,
+      "product_name": "Чеснок",
+      "amount": 3,
+      "price": 150
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 24,
+    "body": {
+      "customer_id": 8,
+      "personal_data": "Кузнецова Елизавета Данииловна",
+      "purchase_date": "2023-07-01",
+      "product_id": 3,
+      "product_name": "Морковь",
+      "amount": 2,
+      "price": 90
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 25,
+    "body": {
+      "customer_id": 23,
+      "personal_data": "Лукьянова Полина Александровна",
+      "purchase_date": "2023-10-25",
+      "product_id": 10,
+      "product_name": "Персик",
+      "amount": 13,
+      "price": 2340
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 26,
+    "body": {
+      "customer_id": 11,
+      "personal_data": "Игнатова Ксения Александровна",
+      "purchase_date": "2023-11-09",
+      "product_id": 22,
+      "product_name": "Малина",
+      "amount": 6,
+      "price": 2100
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 27,
+    "body": {
+      "customer_id": 6,
+      "personal_data": "Романов Егор Александрович",
+      "purchase_date": "2023-07-23",
+      "product_id": 17,
+      "product_name": "Брокколи",
+      "amount": 7,
+      "price": 2800
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 28,
+    "body": {
+      "customer_id": 13,
+      "personal_data": "Ильин Ярослав Мартинович",
+      "purchase_date": "2023-10-12",
+      "product_id": 23,
+      "product_name": "Груша",
+      "amount": 12,
+      "price": 3000
+    }
+  },
+  {
+    "index": "purchase",
+    "doc_type": "purchase",
+    "id": 29,
+    "body": {
+      "customer_id": 4,
+      "personal_data": "Жукова Александра Тимофеевна",
+      "purchase_date": "2023-07-08",
+      "product_id": 12,
+      "product_name": "Дыня",
+      "amount": 4,
+      "price": 640
+    }
+  }
+]
