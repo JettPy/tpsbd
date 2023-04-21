@@ -1,0 +1,19 @@
+curl -X GET "localhost:9200/purchase/_search?pretty" -H 'Content-Type: application/json' -d'
+{
+    "query": {
+        "range": {
+            "purchase_date": {
+                "gte": "now-2M/M",
+                "lte": "now/M"
+            }
+        }
+    },
+    "aggs": {
+        "total_price": {
+            "sum": {
+                "field": "price"
+            }
+        }
+    }
+}
+' > result2.json

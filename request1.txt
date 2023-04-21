@@ -1,0 +1,27 @@
+curl -X GET "localhost:9200/product/_search?pretty" -H 'Content-Type: application/json' -d'
+{
+    "size": 0,
+    "aggs": {
+        "per_month": {
+            "date_histogram": {
+                "field": "batch_receipt_date",
+                "calendar_interval": "month"
+            },
+            "aggs": {
+                "product_name": {
+                    "terms": {
+                        "field": "product_name"
+                    },
+                    "aggs": {
+                        "product_sold": {
+                            "terms": {
+                                "field": "amount_of_sold"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+' > result1.json
