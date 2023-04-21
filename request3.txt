@@ -1,0 +1,4 @@
+MATCH (purch:Purchase)-[r]->(prod:Product)
+WITH purch.id AS product_id, purch.customer AS customer, SUM(r.price) AS total_price
+ORDER BY total_price DESC LIMIT 1
+RETURN customer, total_price

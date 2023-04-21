@@ -27,7 +27,7 @@ for purchase in purchases['hits']['hits']:
         if product_node is None:
             product_node = Node(
                 "Product",
-                product_id=purchase['_source']['product_id'],
+                id=purchase['_source']['product_id'],
                 product_name=purchase['_source']['product_name']
             )
             graph_db.create(product_node)
