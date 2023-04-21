@@ -1,422 +1,422 @@
 [
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 0,
-    "body": {
-      "customer_id": 11,
-      "personal_data": "Игнатова Ксения Александровна",
-      "purchase_date": "2023-08-07",
-      "product_id": 18,
-      "product_name": "Клубника",
-      "amount": 21,
-      "price": 5880
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 0,
+        "body": {
+            "customer_id": 8,
+            "personal_data": "\u0425\u0430\u0440\u0438\u0442\u043e\u043d\u043e\u0432 \u041c\u0438\u0440\u043e\u0441\u043b\u0430\u0432 \u0412\u0430\u0434\u0438\u043c\u043e\u0432\u0438\u0447",
+            "purchase_date": "2022-11-19",
+            "product_id": 18,
+            "product_name": "\u0411\u0430\u043a\u043b\u0430\u0436\u0430\u043d",
+            "amount": 50,
+            "price": 3000
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 1,
+        "body": {
+            "customer_id": 13,
+            "personal_data": "\u041b\u0438\u0442\u0432\u0438\u043d\u043e\u0432\u0430 \u0410\u043d\u0430\u0441\u0442\u0430\u0441\u0438\u044f \u0414\u043c\u0438\u0442\u0440\u0438\u0435\u0432\u043d\u0430",
+            "purchase_date": "2023-01-09",
+            "product_id": 10,
+            "product_name": "\u0420\u0435\u043f\u0430",
+            "amount": 40,
+            "price": 2200
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 2,
+        "body": {
+            "customer_id": 8,
+            "personal_data": "\u0425\u0430\u0440\u0438\u0442\u043e\u043d\u043e\u0432 \u041c\u0438\u0440\u043e\u0441\u043b\u0430\u0432 \u0412\u0430\u0434\u0438\u043c\u043e\u0432\u0438\u0447",
+            "purchase_date": "2023-04-06",
+            "product_id": 12,
+            "product_name": "\u041c\u0430\u043b\u0438\u043d\u0430",
+            "amount": 35,
+            "price": 2975
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 3,
+        "body": {
+            "customer_id": 19,
+            "personal_data": "\u0424\u0435\u0434\u043e\u0440\u043e\u0432 \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440 \u041c\u0438\u0440\u043e\u043d\u043e\u0432\u0438\u0447",
+            "purchase_date": "2023-01-26",
+            "product_id": 16,
+            "product_name": "\u0418\u043d\u0436\u0438\u0440",
+            "amount": 36,
+            "price": 2520
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 4,
+        "body": {
+            "customer_id": 0,
+            "personal_data": "\u041a\u043e\u0437\u043b\u043e\u0432 \u0424\u0451\u0434\u043e\u0440 \u0418\u043b\u044c\u0438\u0447",
+            "purchase_date": "2023-04-20",
+            "product_id": 4,
+            "product_name": "\u0420\u0435\u0434\u0438\u0441",
+            "amount": 24,
+            "price": 480
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 5,
+        "body": {
+            "customer_id": 15,
+            "personal_data": "\u0424\u0435\u0434\u043e\u0442\u043e\u0432\u0430 \u042d\u043b\u0438\u043d\u0430 \u041d\u0438\u043a\u0438\u0442\u0438\u0447\u043d\u0430",
+            "purchase_date": "2023-04-06",
+            "product_id": 9,
+            "product_name": "\u0410\u043f\u0435\u043b\u044c\u0441\u0438\u043d",
+            "amount": 8,
+            "price": 360
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 6,
+        "body": {
+            "customer_id": 17,
+            "personal_data": "\u0424\u0430\u0434\u0435\u0435\u0432 \u0410\u0440\u0441\u0435\u043d\u0438\u0439 \u041c\u0438\u0445\u0430\u0439\u043b\u043e\u0432\u0438\u0447",
+            "purchase_date": "2022-12-16",
+            "product_id": 19,
+            "product_name": "\u0421\u043b\u0438\u0432\u0430",
+            "amount": 6,
+            "price": 360
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 7,
+        "body": {
+            "customer_id": 4,
+            "personal_data": "\u041d\u0438\u043a\u0438\u0444\u043e\u0440\u043e\u0432\u0430 \u0421\u043e\u0444\u0438\u044f \u0414\u0435\u043c\u044c\u044f\u043d\u043e\u0432\u043d\u0430",
+            "purchase_date": "2023-01-03",
+            "product_id": 7,
+            "product_name": "\u041c\u043e\u0440\u043a\u043e\u0432\u044c",
+            "amount": 46,
+            "price": 1150
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 8,
+        "body": {
+            "customer_id": 17,
+            "personal_data": "\u0424\u0430\u0434\u0435\u0435\u0432 \u0410\u0440\u0441\u0435\u043d\u0438\u0439 \u041c\u0438\u0445\u0430\u0439\u043b\u043e\u0432\u0438\u0447",
+            "purchase_date": "2023-01-10",
+            "product_id": 24,
+            "product_name": "\u041c\u0430\u043d\u0433\u043e",
+            "amount": 46,
+            "price": 3680
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 9,
+        "body": {
+            "customer_id": 2,
+            "personal_data": "\u0411\u0435\u043b\u043e\u0432\u0430 \u0417\u043e\u044f \u0410\u0440\u0442\u0451\u043c\u043e\u0432\u043d\u0430",
+            "purchase_date": "2023-03-26",
+            "product_id": 3,
+            "product_name": "\u0410\u0432\u043e\u043a\u0430\u0434\u043e",
+            "amount": 21,
+            "price": 1785
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 10,
+        "body": {
+            "customer_id": 4,
+            "personal_data": "\u041d\u0438\u043a\u0438\u0444\u043e\u0440\u043e\u0432\u0430 \u0421\u043e\u0444\u0438\u044f \u0414\u0435\u043c\u044c\u044f\u043d\u043e\u0432\u043d\u0430",
+            "purchase_date": "2022-12-08",
+            "product_id": 7,
+            "product_name": "\u041c\u043e\u0440\u043a\u043e\u0432\u044c",
+            "amount": 2,
+            "price": 50
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 11,
+        "body": {
+            "customer_id": 15,
+            "personal_data": "\u0424\u0435\u0434\u043e\u0442\u043e\u0432\u0430 \u042d\u043b\u0438\u043d\u0430 \u041d\u0438\u043a\u0438\u0442\u0438\u0447\u043d\u0430",
+            "purchase_date": "2023-03-01",
+            "product_id": 24,
+            "product_name": "\u041c\u0430\u043d\u0433\u043e",
+            "amount": 1,
+            "price": 80
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 12,
+        "body": {
+            "customer_id": 9,
+            "personal_data": "\u041a\u043e\u0436\u0435\u0432\u043d\u0438\u043a\u043e\u0432\u0430 \u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430 \u0413\u043e\u0440\u0434\u0435\u0435\u0432\u043d\u0430",
+            "purchase_date": "2023-01-04",
+            "product_id": 24,
+            "product_name": "\u041c\u0430\u043d\u0433\u043e",
+            "amount": 3,
+            "price": 240
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 13,
+        "body": {
+            "customer_id": 6,
+            "personal_data": "\u041c\u0430\u043b\u0438\u043d\u0438\u043d \u041a\u0438\u0440\u0438\u043b\u043b \u0412\u044f\u0447\u0435\u0441\u043b\u0430\u0432\u043e\u0432\u0438\u0447",
+            "purchase_date": "2023-01-25",
+            "product_id": 8,
+            "product_name": "\u0415\u0436\u0435\u0432\u0438\u043a\u0430",
+            "amount": 10,
+            "price": 1250
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 14,
+        "body": {
+            "customer_id": 7,
+            "personal_data": "\u0422\u043e\u043a\u0430\u0440\u0435\u0432\u0430 \u041c\u0438\u0440\u043e\u0441\u043b\u0430\u0432\u0430 \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u043d\u0430",
+            "purchase_date": "2023-03-26",
+            "product_id": 14,
+            "product_name": "\u0413\u043e\u0440\u043e\u0445",
+            "amount": 4,
+            "price": 140
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 15,
+        "body": {
+            "customer_id": 2,
+            "personal_data": "\u0411\u0435\u043b\u043e\u0432\u0430 \u0417\u043e\u044f \u0410\u0440\u0442\u0451\u043c\u043e\u0432\u043d\u0430",
+            "purchase_date": "2022-12-24",
+            "product_id": 21,
+            "product_name": "\u0410\u0431\u0440\u0438\u043a\u043e\u0441",
+            "amount": 17,
+            "price": 935
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 16,
+        "body": {
+            "customer_id": 19,
+            "personal_data": "\u0424\u0435\u0434\u043e\u0440\u043e\u0432 \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440 \u041c\u0438\u0440\u043e\u043d\u043e\u0432\u0438\u0447",
+            "purchase_date": "2023-04-05",
+            "product_id": 9,
+            "product_name": "\u0410\u043f\u0435\u043b\u044c\u0441\u0438\u043d",
+            "amount": 21,
+            "price": 945
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 17,
+        "body": {
+            "customer_id": 8,
+            "personal_data": "\u0425\u0430\u0440\u0438\u0442\u043e\u043d\u043e\u0432 \u041c\u0438\u0440\u043e\u0441\u043b\u0430\u0432 \u0412\u0430\u0434\u0438\u043c\u043e\u0432\u0438\u0447",
+            "purchase_date": "2023-04-01",
+            "product_id": 3,
+            "product_name": "\u0410\u0432\u043e\u043a\u0430\u0434\u043e",
+            "amount": 27,
+            "price": 2295
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 18,
+        "body": {
+            "customer_id": 1,
+            "personal_data": "\u0427\u0438\u0441\u0442\u044f\u043a\u043e\u0432\u0430 \u041a\u0441\u0435\u043d\u0438\u044f \u041c\u0430\u0442\u0432\u0435\u0435\u0432\u043d\u0430",
+            "purchase_date": "2023-02-15",
+            "product_id": 14,
+            "product_name": "\u0413\u043e\u0440\u043e\u0445",
+            "amount": 65,
+            "price": 2275
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 19,
+        "body": {
+            "customer_id": 7,
+            "personal_data": "\u0422\u043e\u043a\u0430\u0440\u0435\u0432\u0430 \u041c\u0438\u0440\u043e\u0441\u043b\u0430\u0432\u0430 \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u043d\u0430",
+            "purchase_date": "2023-02-16",
+            "product_id": 19,
+            "product_name": "\u0421\u043b\u0438\u0432\u0430",
+            "amount": 27,
+            "price": 1620
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 20,
+        "body": {
+            "customer_id": 0,
+            "personal_data": "\u041a\u043e\u0437\u043b\u043e\u0432 \u0424\u0451\u0434\u043e\u0440 \u0418\u043b\u044c\u0438\u0447",
+            "purchase_date": "2023-02-16",
+            "product_id": 10,
+            "product_name": "\u0420\u0435\u043f\u0430",
+            "amount": 1,
+            "price": 55
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 21,
+        "body": {
+            "customer_id": 5,
+            "personal_data": "\u0411\u043e\u0440\u043e\u0434\u0438\u043d \u0410\u0440\u0442\u0435\u043c\u0438\u0439 \u041b\u044c\u0432\u043e\u0432\u0438\u0447",
+            "purchase_date": "2023-04-12",
+            "product_id": 15,
+            "product_name": "\u0410\u0440\u0431\u0443\u0437",
+            "amount": 16,
+            "price": 1920
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 22,
+        "body": {
+            "customer_id": 9,
+            "personal_data": "\u041a\u043e\u0436\u0435\u0432\u043d\u0438\u043a\u043e\u0432\u0430 \u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430 \u0413\u043e\u0440\u0434\u0435\u0435\u0432\u043d\u0430",
+            "purchase_date": "2023-04-18",
+            "product_id": 0,
+            "product_name": "\u041a\u043b\u0443\u0431\u043d\u0438\u043a\u0430",
+            "amount": 41,
+            "price": 3075
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 23,
+        "body": {
+            "customer_id": 19,
+            "personal_data": "\u0424\u0435\u0434\u043e\u0440\u043e\u0432 \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440 \u041c\u0438\u0440\u043e\u043d\u043e\u0432\u0438\u0447",
+            "purchase_date": "2023-01-05",
+            "product_id": 7,
+            "product_name": "\u041c\u043e\u0440\u043a\u043e\u0432\u044c",
+            "amount": 1,
+            "price": 25
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 24,
+        "body": {
+            "customer_id": 10,
+            "personal_data": "\u0421\u0438\u0434\u043e\u0440\u043e\u0432\u0430 \u041a\u0430\u043c\u0438\u043b\u043b\u0430 \u0410\u0440\u0441\u0435\u043d\u0442\u044c\u0435\u0432\u043d\u0430",
+            "purchase_date": "2023-04-16",
+            "product_id": 9,
+            "product_name": "\u0410\u043f\u0435\u043b\u044c\u0441\u0438\u043d",
+            "amount": 5,
+            "price": 225
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 25,
+        "body": {
+            "customer_id": 3,
+            "personal_data": "\u0424\u0440\u043e\u043b\u043e\u0432\u0430 \u0415\u0432\u0430 \u0412\u044f\u0447\u0435\u0441\u043b\u0430\u0432\u043e\u0432\u043d\u0430",
+            "purchase_date": "2022-12-21",
+            "product_id": 18,
+            "product_name": "\u0411\u0430\u043a\u043b\u0430\u0436\u0430\u043d",
+            "amount": 2,
+            "price": 120
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 26,
+        "body": {
+            "customer_id": 11,
+            "personal_data": "\u0421\u043c\u0438\u0440\u043d\u043e\u0432 \u0414\u043c\u0438\u0442\u0440\u0438\u0439 \u041f\u043b\u0430\u0442\u043e\u043d\u043e\u0432\u0438\u0447",
+            "purchase_date": "2023-04-09",
+            "product_id": 11,
+            "product_name": "\u0414\u044b\u043d\u044f",
+            "amount": 15,
+            "price": 1875
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 27,
+        "body": {
+            "customer_id": 17,
+            "personal_data": "\u0424\u0430\u0434\u0435\u0435\u0432 \u0410\u0440\u0441\u0435\u043d\u0438\u0439 \u041c\u0438\u0445\u0430\u0439\u043b\u043e\u0432\u0438\u0447",
+            "purchase_date": "2023-04-19",
+            "product_id": 2,
+            "product_name": "\u041a\u0430\u0440\u0442\u043e\u0444\u0435\u043b\u044c",
+            "amount": 55,
+            "price": 1100
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 28,
+        "body": {
+            "customer_id": 10,
+            "personal_data": "\u0421\u0438\u0434\u043e\u0440\u043e\u0432\u0430 \u041a\u0430\u043c\u0438\u043b\u043b\u0430 \u0410\u0440\u0441\u0435\u043d\u0442\u044c\u0435\u0432\u043d\u0430",
+            "purchase_date": "2023-02-09",
+            "product_id": 11,
+            "product_name": "\u0414\u044b\u043d\u044f",
+            "amount": 2,
+            "price": 250
+        }
+    },
+    {
+        "index": "purchase",
+        "doc_type": "purchase",
+        "id": 29,
+        "body": {
+            "customer_id": 14,
+            "personal_data": "\u041a\u0430\u0437\u0430\u043a\u043e\u0432\u0430 \u0410\u0440\u0438\u043d\u0430 \u0410\u0440\u0442\u0451\u043c\u043e\u0432\u043d\u0430",
+            "purchase_date": "2023-03-08",
+            "product_id": 8,
+            "product_name": "\u0415\u0436\u0435\u0432\u0438\u043a\u0430",
+            "amount": 28,
+            "price": 3500
+        }
     }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 1,
-    "body": {
-      "customer_id": 20,
-      "personal_data": "Антонов Александр Львович",
-      "purchase_date": "2023-09-29",
-      "product_id": 11,
-      "product_name": "Арбуз",
-      "amount": 8,
-      "price": 1200
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 2,
-    "body": {
-      "customer_id": 3,
-      "personal_data": "Александров Матвей Александрович",
-      "purchase_date": "2023-11-17",
-      "product_id": 4,
-      "product_name": "Свекла",
-      "amount": 3,
-      "price": 105
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 3,
-    "body": {
-      "customer_id": 15,
-      "personal_data": "Смирнов Степан Владимирович",
-      "purchase_date": "2023-08-06",
-      "product_id": 0,
-      "product_name": "Банан",
-      "amount": 15,
-      "price": 1875
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 4,
-    "body": {
-      "customer_id": 7,
-      "personal_data": "Кузнецов Даниил Александрович",
-      "purchase_date": "2023-09-27",
-      "product_id": 18,
-      "product_name": "Клубника",
-      "amount": 34,
-      "price": 9520
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 5,
-    "body": {
-      "customer_id": 14,
-      "personal_data": "Федотова Вера Михайловна",
-      "purchase_date": "2023-12-21",
-      "product_id": 7,
-      "product_name": "Тыква",
-      "amount": 4,
-      "price": 480
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 6,
-    "body": {
-      "customer_id": 9,
-      "personal_data": "Фирсов Артём Степанович",
-      "purchase_date": "2023-12-22",
-      "product_id": 19,
-      "product_name": "Апельсин",
-      "amount": 41,
-      "price": 2870
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 7,
-    "body": {
-      "customer_id": 18,
-      "personal_data": "Титов Пётр Ярославович",
-      "purchase_date": "2023-09-06",
-      "product_id": 21,
-      "product_name": "Ежевика",
-      "amount": 32,
-      "price": 11200
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 8,
-    "body": {
-      "customer_id": 24,
-      "personal_data": "Кузнецова Василиса Матвеевна",
-      "purchase_date": "2023-07-02",
-      "product_id": 5,
-      "product_name": "Капуста",
-      "amount": 5,
-      "price": 300
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 9,
-    "body": {
-      "customer_id": 2,
-      "personal_data": "Иванов Роберт Кириллович",
-      "purchase_date": "2023-10-22",
-      "product_id": 14,
-      "product_name": "Лук",
-      "amount": 14,
-      "price": 1050
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 10,
-    "body": {
-      "customer_id": 7,
-      "personal_data": "Кузнецов Даниил Александрович",
-      "purchase_date": "2023-12-06",
-      "product_id": 1,
-      "product_name": "Яблоко",
-      "amount": 8,
-      "price": 1040
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 11,
-    "body": {
-      "customer_id": 19,
-      "personal_data": "Малышева Ярослава Александровна",
-      "purchase_date": "2023-07-13",
-      "product_id": 6,
-      "product_name": "Редис",
-      "amount": 8,
-      "price": 800
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 12,
-    "body": {
-      "customer_id": 5,
-      "personal_data": "Суханов Тимур Владимирович",
-      "purchase_date": "2023-08-01",
-      "product_id": 18,
-      "product_name": "Клубника",
-      "amount": 10,
-      "price": 2800
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 13,
-    "body": {
-      "customer_id": 15,
-      "personal_data": "Смирнов Степан Владимирович",
-      "purchase_date": "2023-10-14",
-      "product_id": 13,
-      "product_name": "Ананас",
-      "amount": 6,
-      "price": 1380
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 14,
-    "body": {
-      "customer_id": 17,
-      "personal_data": "Дьяков Александр Макарович",
-      "purchase_date": "2023-07-16",
-      "product_id": 24,
-      "product_name": "Огурец",
-      "amount": 12,
-      "price": 840
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 15,
-    "body": {
-      "customer_id": 18,
-      "personal_data": "Титов Пётр Ярославович",
-      "purchase_date": "2023-12-27",
-      "product_id": 16,
-      "product_name": "Картошка",
-      "amount": 11,
-      "price": 385
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 16,
-    "body": {
-      "customer_id": 12,
-      "personal_data": "Федорова Ева Максимовна",
-      "purchase_date": "2023-07-27",
-      "product_id": 21,
-      "product_name": "Ежевика",
-      "amount": 10,
-      "price": 3500
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 17,
-    "body": {
-      "customer_id": 11,
-      "personal_data": "Игнатова Ксения Александровна",
-      "purchase_date": "2023-12-06",
-      "product_id": 2,
-      "product_name": "Помидор",
-      "amount": 10,
-      "price": 2600
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 18,
-    "body": {
-      "customer_id": 10,
-      "personal_data": "Кочеткова Анна Львовна",
-      "purchase_date": "2023-07-25",
-      "product_id": 20,
-      "product_name": "Черника",
-      "amount": 8,
-      "price": 2800
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 19,
-    "body": {
-      "customer_id": 16,
-      "personal_data": "Гришина Лея Кирилловна",
-      "purchase_date": "2023-12-10",
-      "product_id": 8,
-      "product_name": "Киви",
-      "amount": 10,
-      "price": 1500
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 20,
-    "body": {
-      "customer_id": 22,
-      "personal_data": "Волкова Арина Владимировна",
-      "purchase_date": "2023-07-22",
-      "product_id": 24,
-      "product_name": "Огурец",
-      "amount": 10,
-      "price": 700
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 21,
-    "body": {
-      "customer_id": 21,
-      "personal_data": "Гуляева Ксения Ивановна",
-      "purchase_date": "2023-09-12",
-      "product_id": 22,
-      "product_name": "Малина",
-      "amount": 10,
-      "price": 3500
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 22,
-    "body": {
-      "customer_id": 1,
-      "personal_data": "Миронов Степан Захарович",
-      "purchase_date": "2023-12-17",
-      "product_id": 9,
-      "product_name": "Баклажан",
-      "amount": 7,
-      "price": 1960
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 23,
-    "body": {
-      "customer_id": 0,
-      "personal_data": "Васильев Иван Дмитриевич",
-      "purchase_date": "2023-07-06",
-      "product_id": 15,
-      "product_name": "Чеснок",
-      "amount": 3,
-      "price": 150
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 24,
-    "body": {
-      "customer_id": 8,
-      "personal_data": "Кузнецова Елизавета Данииловна",
-      "purchase_date": "2023-07-01",
-      "product_id": 3,
-      "product_name": "Морковь",
-      "amount": 2,
-      "price": 90
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 25,
-    "body": {
-      "customer_id": 23,
-      "personal_data": "Лукьянова Полина Александровна",
-      "purchase_date": "2023-10-25",
-      "product_id": 10,
-      "product_name": "Персик",
-      "amount": 13,
-      "price": 2340
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 26,
-    "body": {
-      "customer_id": 11,
-      "personal_data": "Игнатова Ксения Александровна",
-      "purchase_date": "2023-11-09",
-      "product_id": 22,
-      "product_name": "Малина",
-      "amount": 6,
-      "price": 2100
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 27,
-    "body": {
-      "customer_id": 6,
-      "personal_data": "Романов Егор Александрович",
-      "purchase_date": "2023-07-23",
-      "product_id": 17,
-      "product_name": "Брокколи",
-      "amount": 7,
-      "price": 2800
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 28,
-    "body": {
-      "customer_id": 13,
-      "personal_data": "Ильин Ярослав Мартинович",
-      "purchase_date": "2023-10-12",
-      "product_id": 23,
-      "product_name": "Груша",
-      "amount": 12,
-      "price": 3000
-    }
-  },
-  {
-    "index": "purchase",
-    "doc_type": "purchase",
-    "id": 29,
-    "body": {
-      "customer_id": 4,
-      "personal_data": "Жукова Александра Тимофеевна",
-      "purchase_date": "2023-07-08",
-      "product_id": 12,
-      "product_name": "Дыня",
-      "amount": 4,
-      "price": 640
-    }
-  }
 ]

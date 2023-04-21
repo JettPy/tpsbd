@@ -1,11 +1,3 @@
-# import random
-#
-# for i in range(30):
-#     year = 2023
-#     month = random.randint(7, 12)
-#     day = random.randint(1, 30)
-#     print("%4d-%02d-%02d" % (year, month, day))
-#
 import json
 shop = {}
 with open("purchases.json", "r", encoding="UTF-8") as file:
@@ -29,7 +21,10 @@ with open("products.json", "r", encoding="UTF-8") as file:
         price = product['body']['price']
         # print(product_id, product_name, amount_of_sold, amount_of_sold * price)
         if shop.get(product_id) is None:
-            print("Error:", product_id, product_name, amount_of_sold, price)
+            if (amount_of_sold != 0):
+                print("Error:", product_id, product_name, amount_of_sold, price)
+            else:
+                shop[product_id] = [product_name, amount_of_sold, amount_of_sold * price]
         else:
             tmp_list = [product_name, amount_of_sold - shop[product_id][1], shop[product_id][2] - amount_of_sold * price]
             shop[product_id] = tmp_list.copy()

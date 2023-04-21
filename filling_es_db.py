@@ -1,6 +1,5 @@
 import json
 from elasticsearch import Elasticsearch
-from tqdm import tqdm
 
 client = Elasticsearch([{"host": "127.0.0.1", "port": 9200}])
 product_index = "product"
@@ -131,7 +130,7 @@ client.indices.open(index=purchase_index)
 with open("products.json") as file:
     data = json.load(file)
 
-for product in tqdm(data):
+for product in data:
     try:
         client.index(
             index=product["index"],
@@ -147,7 +146,7 @@ print("Products loaded")
 with open("purchases.json") as file:
     data = json.load(file)
 
-for purchase in tqdm(data):
+for purchase in data:
     try:
         client.index(
             index=purchase["index"],
