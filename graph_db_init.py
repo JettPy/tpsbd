@@ -1,22 +1,22 @@
+import json
+
 from elasticsearch import Elasticsearch
 from py2neo import Graph, Node, Relationship
-from tqdm import tqdm
 
 
 client = Elasticsearch([{"host": "127.0.0.1", "port": 9200}])
 product_index = "product"
 purchase_index = "purchase"
 
-graph_db = Graph("bolt://localhost:7687", auth=("neo4j", "123"))
+graph_db = Graph("bolt://localhost:7687")
 graph_db.delete_all()
 
 products = client.search(index=product_index, size=1000)
 purchases = client.search(index=purchase_index, size=1000)
-for product in products:
-    print(product)
-print('\n=====================================================================================================\n')
-for purchase in purchases:
-    print(purchase)
+with open('test_purchases.json', 'w', encoding='UTF-8') as file:
+    json.dump(purchases, file, indent=4)
+with open('test_products.json', 'w', encoding='UTF-8') as file:
+    json.dump(products, file, indent=4)
 c_c = 0
 # for purchase in purchases['hits']['hits']:
 #     try:
