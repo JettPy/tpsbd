@@ -54,7 +54,8 @@ print("Settings putted")
 product_mapping = {
     "properties": {
         "product_name": {
-            "type": "text"
+            "type": "text",
+            "fielddata": True
         },
         "batch_receipt_date": {
             "type": "date",
