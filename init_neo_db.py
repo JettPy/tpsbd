@@ -10,16 +10,16 @@ def init_neo_db():
     graph_db.delete_all()
     products = client.search(index=PRODUCT_INDEX, size=1000)
     purchases = client.search(index=PURCHASE_INDEX, size=1000)
-    for product in products['hits']['hits']:
-        try:
-            product_node = Node(
-                'Product',
-                id=product['_id'],
-                product_name=product['_source']['product_name']
-            )
-            graph_db.create(product_node)
-        except Exception:
-            continue
+    # for product in products['hits']['hits']:
+    #     try:
+    #         product_node = Node(
+    #             'Product',
+    #             id=product['_id'],
+    #             product_name=product['_source']['product_name']
+    #         )
+    #         graph_db.create(product_node)
+    #     except Exception:
+    #         continue
     
     for purchase in purchases['hits']['hits']:
         try:
