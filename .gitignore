@@ -3,3 +3,4 @@ venv
 utils
 purchases.json
 products.json
+__pycache__

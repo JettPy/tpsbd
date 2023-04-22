@@ -1,5 +1,5 @@
 from elasticsearch import Elasticsearch
-from py2neo import Graph, Node, Relationship
+from py2neo import Graph, Node, Relationship, NodeMatcher
 
 from constants import PRODUCT_INDEX, PURCHASE_INDEX
 
@@ -10,16 +10,18 @@ def init_neo_db():
     graph_db.delete_all()
     products = client.search(index=PRODUCT_INDEX, size=1000)
     purchases = client.search(index=PURCHASE_INDEX, size=1000)
-    # for product in products['hits']['hits']:
-    #     try:
-    #         product_node = Node(
-    #             'Product',
-    #             id=product['_id'],
-    #             product_name=product['_source']['product_name']
-    #         )
-    #         graph_db.create(product_node)
-    #     except Exception:
-    #         continue
+    for product in products['hits']['hits']:
+        try:
+            product_node = Node(
+                'Product',
+                id=product['_id'],
+                product_name=product['_source']['product_name']
+            )
+            graph_db.create(product_node)
+        except Exception:
+            continue
+    
+    matcher = NodeMatcher(graph_db).match('Product')
     
     for purchase in purchases['hits']['hits']:
         try:
@@ -30,27 +32,18 @@ def init_neo_db():
                 customer=purchase['_source']['personal_data']
             )
             graph_db.create(purchase_node)
-            product_node = graph_db.nodes.match(
-                'Product',
-                product_id=purchase['_source']['product_id']
-            ).first()
-            if product_node is None:
-                product_node = Node(
-                    'Product',
-                    id=purchase['_source']['product_id'],
-                    product_name=purchase['_source']['product_name']
-                )
-                graph_db.create(product_node)
-            connection = Relationship(
+            product_node = matcher.where(f"_.id = '{purchase['_source']['product_id']}'").first()
+            relationship = Relationship(
                 purchase_node,
                 'Include',
                 product_node,
                 amount=purchase['_source']['amount'],
                 price=purchase['_source']['price']
             )
-            graph_db.create(connection)
+            graph_db.create(relationship)
         except Exception:
             continue
+    print(graph_db.nodes)
 
 
 if __name__ == '__main__':
