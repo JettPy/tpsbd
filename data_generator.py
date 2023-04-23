@@ -112,6 +112,7 @@ def generate():
 
     with open('products.json', 'w') as file:
         json.dump(products_list, file, indent=4)
+    print('Данные сгенерированы (JSON)')
 
 
 if __name__ == '__main__':

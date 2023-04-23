@@ -148,6 +148,7 @@ def init_es_db():
             )
         except Exception:
             pass
+    print('База данных elasticsearch проинициализирована')
 
 
 if __name__ == '__main__':

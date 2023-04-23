@@ -43,6 +43,7 @@ def init_neo_db():
             graph_db.create(relationship)
         except Exception:
             continue
+    print('База данных neo4j проинициализирована')
 
 
 if __name__ == '__main__':
