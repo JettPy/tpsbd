@@ -41,6 +41,24 @@ def init_neo_db():
                 price=purchase['_source']['price']
             )
             graph_db.create(relationship)
+            customer_node = graph_db.nodes.match(
+                'Customer',
+                id=purchase['_source']['customer_id'],
+                name=purchase['_source']['personal_data']
+            )
+            if customer_node is None:
+                customer_node = Node(
+                    'Customer',
+                    id=purchase['_source']['customer_id'],
+                    name=purchase['_source']['personal_data']
+                )
+                graph_db.create(product_node)
+            relationship2 = Relationship(
+                customer_node,
+                'Make',
+                purchase_node
+            )
+            graph_db.create(relationship2)
         except Exception:
             continue
 

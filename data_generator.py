@@ -19,7 +19,7 @@ def is_next_date(date_first: tuple, date_last: tuple):
     elif date_first[1] != date_last[1]:
         return date_first[1] < date_last[1]
     else:
-        return date_first[2] < date_last[2]
+        return date_first[2] <= date_last[2]
 
 
 def get_second_date(date: tuple):
@@ -48,6 +48,7 @@ def generate():
 
     products_list = []
     purchases_list = []
+    is_none = []
     is_used = set()
     for i in range(products_count):
         product = {'index': 'product', 'doc_type': 'product', 'id': i}
@@ -74,14 +75,18 @@ def generate():
         body['image_link'] = f'images/{link}.jpg'
         product['body'] = body
         products_list.append(product)
-
+        is_none.append(i)
     for i in range(purchases_count):
         purchase = {'index': 'purchase', 'doc_type': 'purchase', 'id': i}
         body = {}
         customer_id = random.randint(0, customers_count - 1)
         body['customer_id'] = customer_id
         body['personal_data'] = CUSTOMERS[customer_id]
-        product_id = random.randint(0, products_count - 1)
+        if random.random() < 0.88 and len(is_none) > 0:
+            product_id = random.choice(is_none)
+            is_none.remove(product_id)
+        else:
+            product_id = random.randint(0, products_count - 1)
         product = products_list[product_id]
         retry_count = products_count
         while product['body']['amount_in_stock'] == 0 and retry_count > 0:
