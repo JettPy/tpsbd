@@ -45,7 +45,7 @@ def init_neo_db():
                 'Customer',
                 id=purchase['_source']['customer_id'],
                 name=purchase['_source']['personal_data']
-            )
+            ).first()
             if customer_node is None:
                 customer_node = Node(
                     'Customer',

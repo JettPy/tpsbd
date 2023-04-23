@@ -1,2 +1,4 @@
 elasticsearch==7.17.0
 py2neo
+findspark
+pyspark
