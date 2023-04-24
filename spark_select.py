@@ -15,6 +15,6 @@ WHERE customers.id = purchases.customer_id
     SELECT MAX(price)
     FROM purchases
   )
-''').show()
+''').show(truncate=False)
 input('Ctrl C')
 spark_session.stop()
