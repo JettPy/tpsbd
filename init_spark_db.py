@@ -1,8 +1,9 @@
-from constants import PRODUCT_INDEX, PURCHASE_INDEX
 from pyspark.sql import SparkSession
 from elasticsearch import Elasticsearch
 from pyspark.sql.types import *
 from datetime import datetime
+PRODUCT_INDEX = 'product'
+PURCHASE_INDEX = 'purchase'
 client = Elasticsearch([{'host': '127.0.0.1', 'port': 9200}])
 spark_session = SparkSession.builder.appName("csv").getOrCreate()
 search_body = {
