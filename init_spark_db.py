@@ -1,10 +1,8 @@
-import findspark
 from constants import PRODUCT_INDEX, PURCHASE_INDEX
 from pyspark.sql import SparkSession
 from elasticsearch import Elasticsearch
 from pyspark.sql.types import *
 from datetime import datetime
-findspark.init()
 client = Elasticsearch([{'host': '127.0.0.1', 'port': 9200}])
 spark_session = SparkSession.builder.appName("csv").getOrCreate()
 search_body = {
@@ -57,6 +55,7 @@ for purchase in purchases:
         int(purchase['_source']['amount']),
         int(purchase['_source']['price'])
     ))
+
 for product in products:
     product_table.append((
         int(product['_id']),
@@ -66,14 +65,13 @@ for product in products:
         int(product['_source']['amount_of_sold']),
         int(product['_source']['price']),
         product['_source']['description'],
-        product['_source']['image_link'],
-        product['_source']['speciality']
+        product['_source']['image_link']
     ))
 
 customer_df = spark_session.createDataFrame(customer_table, customer_schema)
 purchase_df = spark_session.createDataFrame(purchase_table, purchase_schema)
 product_df = spark_session.createDataFrame(product_table, product_schema)
 
-customer_df.write.csv(path='hdfs://localhost:9000/customers.csv', mode='overwrite', header=True)
-purchase_df.write.csv(path='hdfs://localhost:9000/purchases.csv', mode='overwrite', header=True)
-product_df.write.csv(path='hdfs://localhost:9000/products.csv', mode='overwrite', header=True)
+customer_df.write.csv(path='hdfs://localhost:9000/data/customers.csv', mode='overwrite', header=True)
+purchase_df.write.csv(path='hdfs://localhost:9000/data/purchases.csv', mode='overwrite', header=True)
+product_df.write.csv(path='hdfs://localhost:9000/data/products.csv', mode='overwrite', header=True)
