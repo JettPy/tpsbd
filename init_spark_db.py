@@ -6,15 +6,12 @@ from datetime import datetime
 client = Elasticsearch([{'host': '127.0.0.1', 'port': 9200}])
 spark = SparkSession.builder.appName('Online store').getOrCreate()
 
-searchBody = {
-    'size': 1000,
-    'query': {
-        'match_all': {}
-    }
+queryBody = {
+    'match_all': {}
 }
 
-products = client.search(index='product', body=searchBody)['hits']['hits']
-purchases = client.search(index='purchase', body=searchBody)['hits']['hits']
+products = client.search(index='product', query=queryBody, size=1000)['hits']['hits']
+purchases = client.search(index='purchase', query=queryBody, size=1000)['hits']['hits']
 
 customer_schema = StructType([
     StructField('id', IntegerType(), False),

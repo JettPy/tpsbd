@@ -10,38 +10,32 @@ def init_neo_db():
     products = client.search(index=PRODUCT_INDEX, size=1000)['hits']['hits']
     purchases = client.search(index=PURCHASE_INDEX, size=1000)['hits']['hits']
     for product in products:
-        try:
-            product_node = Node(
-                'Product',
-                id=product['_id'],
-                product_name=product['_source']['product_name']
-            )
-            graph_db.create(product_node)
-        except Exception:
-            continue
+        product_node = Node(
+            'Product',
+            id=product['_id'],
+            product_name=product['_source']['product_name']
+        )
+        graph_db.create(product_node)
     
     matcher = NodeMatcher(graph_db).match('Product')
     
     for purchase in purchases:
-        try:
-            purchase_node = Node(
-                'Purchase',
-                id=purchase['_id'],
-                date=purchase['_source']['purchase_date'],
-                customer=purchase['_source']['personal_data']
-            )
-            graph_db.create(purchase_node)
-            product_node = matcher.where(f"_.id = '{purchase['_source']['product_id']}'").first()
-            relationship = Relationship(
-                purchase_node,
-                'Include',
-                product_node,
-                amount=purchase['_source']['amount'],
-                price=purchase['_source']['price']
-            )
-            graph_db.create(relationship)
-        except Exception:
-            continue
+        purchase_node = Node(
+            'Purchase',
+            id=purchase['_id'],
+            date=purchase['_source']['purchase_date'],
+            customer=purchase['_source']['personal_data']
+        )
+        graph_db.create(purchase_node)
+        product_node = matcher.where(f"_.id = '{purchase['_source']['product_id']}'").first()
+        relationship = Relationship(
+            purchase_node,
+            'Include',
+            product_node,
+            amount=purchase['_source']['amount'],
+            price=purchase['_source']['price']
+        )
+        graph_db.create(relationship)
     print('База данных neo4j проинициализирована')
 
 

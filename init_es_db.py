@@ -125,29 +125,23 @@ def init_es_db():
         products = json.load(file)
 
     for product in products:
-        try:
-            client.index(
-                index=product['index'],
-                doc_type=product['doc_type'],
-                id=product['id'],
-                body=product['body']
-            )
-        except Exception:
-            pass
+        client.index(
+            index=product['index'],
+            doc_type=product['doc_type'],
+            id=product['id'],
+            body=product['body']
+        )
 
     with open('purchases.json') as file:
         purchases = json.load(file)
 
     for purchase in purchases:
-        try:
-            client.index(
-                index=purchase['index'],
-                doc_type=purchase['doc_type'],
-                id=purchase['id'],
-                body=purchase['body']
-            )
-        except Exception:
-            pass
+        client.index(
+            index=purchase['index'],
+            doc_type=purchase['doc_type'],
+            id=purchase['id'],
+            body=purchase['body']
+        )
     print('База данных elasticsearch проинициализирована')
 
 
