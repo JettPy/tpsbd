@@ -48,7 +48,7 @@ def init_es_db():
     client.indices.put_settings(index=PRODUCT_INDEX, body=db_analyser_settings)
     client.indices.put_settings(index=PURCHASE_INDEX, body=db_analyser_settings)
 
-    product_mapping = {
+    productMapping = {
         'properties': {
             'product_name': {
                 'type': 'text',
@@ -75,7 +75,7 @@ def init_es_db():
         }
     }
 
-    purchase_mapping = {
+    purchaseMapping = {
         'properties': {
             'customer_id': {
                 'type': 'keyword'
@@ -109,13 +109,13 @@ def init_es_db():
         index=PRODUCT_INDEX,
         doc_type=PRODUCT_INDEX,
         include_type_name='true',
-        body=product_mapping
+        body=productMapping
     )
     client.indices.put_mapping(
         index=PURCHASE_INDEX,
         doc_type=PURCHASE_INDEX,
         include_type_name='true',
-        body=purchase_mapping
+        body=purchaseMapping
     )
 
     client.indices.open(index=PRODUCT_INDEX)

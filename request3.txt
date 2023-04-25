@@ -1,4 +1,0 @@
-MATCH (p:Purchase)-[r]->()
-WITH p.customer AS customer_fio, r.price AS price
-RETURN customer_fio, SUM(price) AS total_price
-ORDER BY total_price DESC LIMIT 1

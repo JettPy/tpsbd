@@ -1,6 +1,5 @@
 from elasticsearch import Elasticsearch
 from py2neo import Graph, Node, Relationship, NodeMatcher
-
 from constants import PRODUCT_INDEX, PURCHASE_INDEX
 
 
@@ -8,9 +7,9 @@ def init_neo_db():
     client = Elasticsearch([{'host': '127.0.0.1', 'port': 9200}])
     graph_db = Graph('bolt://localhost:7687', auth=('neo4j', '123456'))
     graph_db.delete_all()
-    products = client.search(index=PRODUCT_INDEX, size=1000)
-    purchases = client.search(index=PURCHASE_INDEX, size=1000)
-    for product in products['hits']['hits']:
+    products = client.search(index=PRODUCT_INDEX, size=1000)['hits']['hits']
+    purchases = client.search(index=PURCHASE_INDEX, size=1000)['hits']['hits']
+    for product in products:
         try:
             product_node = Node(
                 'Product',
@@ -23,7 +22,7 @@ def init_neo_db():
     
     matcher = NodeMatcher(graph_db).match('Product')
     
-    for purchase in purchases['hits']['hits']:
+    for purchase in purchases:
         try:
             purchase_node = Node(
                 'Purchase',
