@@ -14,7 +14,7 @@ def test():
             last_month = now.month - 2 if now.month > 2 else now.month - 2 + 12
             last_year = now.year if last_month < now.month else now.year - 1
             last_date = datetime(last_year, last_month, 1)
-            if last_date < purchase_date:
+            if last_date <= purchase_date:
                 price_for_2_months += purchase['body']['price']
             total_price += purchase['body']['price']
     print(f'За 2 месяца: {price_for_2_months}, Всего: {total_price}')
