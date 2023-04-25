@@ -46,26 +46,26 @@ product_table = []
 purchase_table = []
 for purchase in purchases:
     customer_table.append((
-        purchase['_source']['customer_id'],
+        int(purchase['_source']['customer_id']),
         purchase['_source']['personal_data']
     ))
     purchase_table.append((
-        purchase['_id'],
-        purchase['_source']['customer_id'],
+        int(purchase['_id']),
+        int(purchase['_source']['customer_id']),
         datetime.strptime(purchase['_source']['purchase_date'], '%Y-%m-%d'),
-        purchase['_source']['product_id'],
-        purchase['_source']['amount'],
-        purchase['_source']['price']
+        int(purchase['_source']['product_id']),
+        int(purchase['_source']['amount']),
+        int(purchase['_source']['price'])
     ))
 
 for product in products:
     product_table.append((
-        product['_id'],
+        int(product['_id']),
         product['_source']['product_name'],
         datetime.strptime(product['_source']['batch_receipt_date'], '%Y-%m-%d'),
-        product['_source']['amount_in_stock'],
-        product['_source']['amount_of_sold'],
-        product['_source']['price'],
+        int(product['_source']['amount_in_stock']),
+        int(product['_source']['amount_of_sold']),
+        int(product['_source']['price']),
         product['_source']['description'],
         product['_source']['image_link']
     ))

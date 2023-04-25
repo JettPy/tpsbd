@@ -22,5 +22,5 @@ spark.sql('''
         )
 ''').show(truncate=False)
 
-input('Нажмите Ctrl+C для выхода')
+input('Enter Ctrl+C')
 spark.stop()

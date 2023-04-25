@@ -1,3 +1,5 @@
+import time
+
 import neo_request
 from data_generator import generate
 import es_request_1
@@ -7,13 +9,16 @@ from init_neo_db import init_neo_db
 
 print('=' * 20)
 generate()
+time.sleep(5)
 print('=' * 20)
 init_es_db()
+time.sleep(5)
 print('=' * 20)
 es_request_1.request()
 print('=' * 20)
 es_request_2.request()
 print('=' * 20)
 init_neo_db()
+time.sleep(5)
 print('=' * 20)
 neo_request.request()
