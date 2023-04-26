@@ -10,32 +10,32 @@ def init_neo_db():
     products = client.search(index=PRODUCT_INDEX, size=1000)['hits']['hits']
     purchases = client.search(index=PURCHASE_INDEX, size=1000)['hits']['hits']
     for product in products:
-        product_node = Node(
+        productNode = Node(
             'Product',
             id=product['_id'],
             product_name=product['_source']['product_name']
         )
-        graph_db.create(product_node)
+        graph_db.create(productNode)
     
     matcher = NodeMatcher(graph_db).match('Product')
     
     for purchase in purchases:
-        purchase_node = Node(
+        purchaseNode = Node(
             'Purchase',
             id=purchase['_id'],
             date=purchase['_source']['purchase_date'],
             customer=purchase['_source']['personal_data']
         )
-        graph_db.create(purchase_node)
-        product_node = matcher.where(f"_.id = '{purchase['_source']['product_id']}'").first()
-        relationship = Relationship(
-            purchase_node,
+        graph_db.create(purchaseNode)
+        productNode = matcher.where(f"_.id = '{purchase['_source']['product_id']}'").first()
+        NodeRelationship = Relationship(
+            purchaseNode,
             'Include',
-            product_node,
+            productNode,
             amount=purchase['_source']['amount'],
             price=purchase['_source']['price']
         )
-        graph_db.create(relationship)
+        graph_db.create(NodeRelationship)
     print('База данных neo4j проинициализирована')
 
 

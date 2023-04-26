@@ -10,50 +10,50 @@ def init_neo_db():
     products = client.search(index=PRODUCT_INDEX, size=1000)['hits']['hits']
     purchases = client.search(index=PURCHASE_INDEX, size=1000)['hits']['hits']
     for product in products:
-        product_node = Node(
+        productNode = Node(
             'Product',
             id=product['_id'],
             product_name=product['_source']['product_name']
         )
-        graph_db.create(product_node)
+        graph_db.create(productNode)
     
     matcher = NodeMatcher(graph_db).match('Product')
     
     for purchase in purchases:
-        purchase_node = Node(
+        purchaseNode = Node(
             'Purchase',
             id=purchase['_id'],
             date=purchase['_source']['purchase_date'],
             customer=purchase['_source']['personal_data']
         )
-        graph_db.create(purchase_node)
-        product_node = matcher.where(f"_.id = '{purchase['_source']['product_id']}'").first()
-        relationship = Relationship(
-            purchase_node,
+        graph_db.create(purchaseNode)
+        productNode = matcher.where(f"_.id = '{purchase['_source']['product_id']}'").first()
+        NodeIncludeRelationship = Relationship(
+            purchaseNode,
             'Include',
-            product_node,
+            productNode,
             amount=purchase['_source']['amount'],
             price=purchase['_source']['price']
         )
-        graph_db.create(relationship)
-        customer_node = graph_db.nodes.match(
+        graph_db.create(NodeIncludeRelationship)
+        customerNode = graph_db.nodes.match(
             'Customer',
             id=purchase['_source']['customer_id'],
             name=purchase['_source']['personal_data']
         ).first()
-        if customer_node is None:
-            customer_node = Node(
+        if customerNode is None:
+            customerNode = Node(
                 'Customer',
                 id=purchase['_source']['customer_id'],
                 name=purchase['_source']['personal_data']
             )
-            graph_db.create(product_node)
-        relationship2 = Relationship(
-            customer_node,
+            graph_db.create(productNode)
+        NodeMakeRelationship = Relationship(
+            customerNode,
             'Make',
-            purchase_node
+            purchaseNode
         )
-        graph_db.create(relationship2)
+        graph_db.create(NodeMakeRelationship)
     print('База данных neo4j c покупателями проинициализирована')
 
 
